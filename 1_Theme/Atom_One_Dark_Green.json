@@ -1,0 +1,70 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorCustomizations": {
+
+        "[Atom One Dark]": {
+            // Progress/Activity Indicator
+            "progressBar.background": "#66b845",
+
+            // 1) Make tab more vivid  --> Set it to bright blue with semi-tranparaent blue fill
+            "tab.activeBorder": "#d4a017",
+            "tab.activeBorderTop": "#d4a017",
+            "tab.activeBackground": "#d4a01733",
+            "tab.activeForeground": "#ffffff",
+
+            // 2) Set the background
+            // Notebook background --> lighter:#26292f  <> darker: #24272d
+            "notebook.editorBackground":"#16192f",
+            "notebook.cellEditorBackground": "#1b1b1b",  // Optional: cell background
+
+            "notebook.outputContainerBackgroundColor": "#202020", // Optional: output background
+            // "notebook.cellBorderColor": "#3C3C3C"    // Optional: cell border highlight
+
+            // 3) Adjust Window title
+            "titleBar.activeBackground": "#47823caf",   // background when window is active
+            "titleBar.activeForeground": "#ffffff",   // text color when active
+
+            "titleBar.inactiveBackground": "#64915caf", // background when window is inactive
+            "titleBar.inactiveForeground": "#eeeeee",  // text color when inactive
+
+            //4 Status Bar
+             "statusBar.background": "#47823caf",             // background color
+             "statusBar.foreground": "#ffffff",              // text color
+             "statusBar.noFolderBackground": "#47823c",      // when no folder is open
+             "statusBar.debuggingBackground": "#ae2012",     // during debugging
+             "statusBar.debuggingForeground": "#ffffff",      // text during debugging
+
+             "editor.background": "#1f1f1f",   // change to your desired hex color
+        }
+    },
+
+    "editor.tokenColorCustomizations": {
+        "[Atom One Dark]": {
+            "textMateRules": [
+                {    // adjsut commment --> testing : {"foreground": "#fd971f" }, better ---> #9e924e
+                "scope": ["comment","punctuation.definition.comment"],
+                "settings": { "foreground": "#9e924e"}
+                },
+                {    // For inline code snippets like `const example = true`.
+                "scope": "markup.inline.raw.string.markdown",
+                "settings": { "foreground": "#ce70df"}
+                },
+                {    // For bullet points and numbered lists.
+                "scope": [ "markup.list.unnumbered.markdown", "markup.list.numbered.markdown"],
+                "settings": { "foreground": "#67b259"}
+                },
+                {"scope":"markup.fenced_code.block.markdown",   // The code blocks ``` ```
+                "settings": { "foreground": "#e6e6e6"}
+                },
+                {
+                "scope": "markup.quote.markdown",  // for blockquotes >
+                "settings": { "foreground": "#9770df"},
+                },
+                {
+                "scope": "invalid.deprecated.entity.other.attribute-name.html",
+                "settings": {"foreground": "#0097e9"},
+                }
+            ]
+        }
+    }
+}
