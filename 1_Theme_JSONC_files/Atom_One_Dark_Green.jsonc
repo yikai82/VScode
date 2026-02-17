@@ -9,7 +9,7 @@
             // 1) Make tab more vivid  --> Set it to bright blue with semi-tranparaent blue fill
             "tab.activeBorder": "#72d417",
             "tab.activeBorderTop": "#72d417",
-            "tab.activeBackground": "#d4a01733",
+            "tab.activeBackground": "#2a4124af",
             "tab.activeForeground": "#ffffff",
 
             // 2) Set the background
